@@ -2,7 +2,7 @@
 
 ## Job 2 — quy trình hiện hành
 
-Chờ nhóm trưởng merge PR bản nền từ integration/job-1-fixes vào main rồi mới bắt đầu code. Không lấy main cũ hoặc nhánh Job 1 làm nền. Đọc bản ghi sửa chữa phần mình nhận và quy chuẩn IE104; dùng kiến thức IE106 để đánh giá tính dễ dùng.
+PR #4 đã merge vào main. Nhánh integration/job-2 được tạo từ bản nền đó để nhận toàn bộ PR Job 2. Thành viên lấy upstream/integration/job-2 làm nền; không dùng nhánh Job 1 cũ. Đọc bản ghi sửa chữa phần mình nhận và quy chuẩn IE104; dùng kiến thức IE106 để đánh giá tính dễ dùng.
 
 | Người | Task | Nhánh mới trên fork | Người góp ý phần gốc |
 |---|---|---|---|
@@ -12,11 +12,11 @@ Chờ nhóm trưởng merge PR bản nền từ integration/job-1-fixes vào mai
 
 Nếu chưa clone fork, làm bước Fork bên dưới nhưng dùng tên nhánh Job 2. origin là fork của mình; upstream là https://github.com/liem-2006/ie104.git. Thêm upstream một lần nếu chưa có. Kiểm tra git status và lưu công việc đang làm trước khi chuyển nhánh.
 
-Ví dụ TV1, sau khi PR nền đã merge:
+Ví dụ TV1:
 
 ~~~sh
 git fetch upstream
-git switch -c task/job-2-tv1-roadmap upstream/main
+git switch -c task/job-2-tv1-roadmap upstream/integration/job-2
 ~~~
 
 TV2/TV3 thay tên nhánh theo bảng. Stage đúng file task, commit rồi push lên fork:
@@ -25,9 +25,11 @@ TV2/TV3 thay tên nhánh theo bảng. Stage đúng file task, commit rồi push 
 git push -u origin task/job-2-tv1-roadmap
 ~~~
 
-Mở một PR/người, base liem-2006/ie104:main, compare nhánh Job 2 trên fork. Ghi commit main làm nền, link task, vấn đề quan sát, bảng trước–sau, ảnh và kết quả kiểm thử thực tế. Có thể mở Draft PR sớm; không dùng nhánh cũ hoặc merge lại PR #1–#3.
+Mở một PR/người, base liem-2006/ie104:integration/job-2, compare nhánh Job 2 trên fork. Ghi commit integration/job-2 làm nền, link task, vấn đề quan sát, bảng trước–sau, ảnh và kết quả kiểm thử thực tế. Có thể mở Draft PR sớm; không dùng nhánh cũ hoặc merge lại PR #1–#3.
 
 Nhóm trưởng sở hữu trang vào, token/CSS/component/module dữ liệu/theme chung trong Job 2, thay phân công TV1 giữ nền chung ở Job 1. Thành viên ghi đề xuất phần chung trong PR; không tự sửa ngoài task. Tác giả ban đầu góp ý, nhóm trưởng duyệt và merge.
+
+Khi bản nền Job 2 cập nhật, chạy git fetch upstream rồi git merge upstream/integration/job-2 trên nhánh task; giải quyết xung đột đúng phạm vi, không force push. Nhóm trưởng duyệt và merge từng PR vào integration/job-2; sau khi kiểm thử tích hợp, mở PR tổng vào main. Thành viên không push vào repo chính và không tự merge.
 
 Các ví dụ Job 1 bên dưới là quy trình cũ; dùng bảng Job 2 để chọn task và tên nhánh.
 

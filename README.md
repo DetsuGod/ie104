@@ -2,7 +2,7 @@
 
 ## Job 2 — kiểm tra chéo và nâng cấp giao diện
 
-Chỉ bắt đầu code sau khi nhóm trưởng merge PR tích hợp vào main. Đọc bản ghi sửa chữa phần mình nhận trước khi sửa.
+PR #4 đã merge. Nhánh [integration/job-2](https://github.com/liem-2006/ie104/tree/integration/job-2) là nền và nơi nhận PR Job 2; thành viên có thể bắt đầu từ nhánh này. Đọc bản ghi sửa chữa phần mình nhận trước khi sửa.
 
 - **TV1:** [Chi tiết/roadmap](topics/detail/JOB-2.md), phần gốc TV2.
 - **TV2:** [Danh bạ/hồ sơ](lecturers/JOB-2.md), phần gốc TV3.
