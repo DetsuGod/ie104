@@ -1,0 +1,124 @@
+/* TV1 — khám phá: tìm/lọc toàn bộ dữ liệu, danh sách 12 đề tài/trang. */
+#page-topics .page-header {
+  margin-bottom: 20px;
+}
+#page-topics .topics-summary {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-top: 10px;
+  min-height: 23px;
+}
+#page-topics .topics-search {
+  margin-bottom: 20px;
+}
+#page-topics .topics-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  min-height: 44px;
+}
+#page-topics .topics-groups__button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-muted);
+  background: var(--color-surface);
+  font-size: 14px;
+  font-weight: 600;
+}
+#page-topics .topics-groups__button[aria-pressed="true"] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+}
+#page-topics .topics-groups__button:hover {
+  border-color: var(--color-link);
+}
+#page-topics .topics-search__hint {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-top: 6px;
+}
+#page-topics .topics-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+}
+#page-topics #results-status {
+  font-size: 14px;
+  color: var(--color-muted);
+  min-height: 23px;
+}
+#page-topics .topics-results__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#page-topics .topics-results__actions label {
+  font-weight: 400;
+  color: var(--color-muted);
+}
+#page-topics .topics-results__actions select {
+  width: auto;
+  font-size: 14px;
+}
+#page-topics .topics-list {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+#page-topics .topics-list:empty {
+  display: none;
+}
+#page-topics .topics-pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 24px;
+}
+#page-topics .topics-pagination__button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-link);
+  font-size: 14px;
+}
+#page-topics .topics-pagination__button[aria-current="page"] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+}
+#page-topics .topics-guide {
+  border-top: 1px solid var(--color-border);
+  margin-top: 32px;
+  padding-top: 8px;
+}
+@media (max-width: 767px) {
+  #page-topics .topics-groups {
+    min-height: 96px;
+  }
+  #page-topics .topics-results__actions {
+    flex-basis: 100%;
+  }
+  #page-topics .topics-results__actions select {
+    flex: 1;
+  }
+  #page-topics .topic-row {
+    padding: 16px;
+  }
+  #page-topics .topic-row__title {
+    font-size: 18px;
+  }
+}
+
+#page-topics .topics-results__heading { font-size: 16px; margin-bottom: 2px; }

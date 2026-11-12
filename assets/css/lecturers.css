@@ -1,0 +1,105 @@
+/* TV3 — danh bạ: cùng token với khám phá, lưới 1/2/3 cột. */
+#page-lecturers .lecturers-filter {
+  display: grid;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+#page-lecturers .lecturers-filter > .btn {
+  justify-self: start;
+}
+#page-lecturers .lecturers-status {
+  color: var(--color-muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+  min-height: 23px;
+}
+#page-lecturers .lecturers-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+#page-lecturers .lecturer-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+#page-lecturers .lecturer-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+#page-lecturers .lecturer-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+}
+#page-lecturers .lecturer-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#page-lecturers .lecturer-card__meta {
+  min-width: 0;
+}
+#page-lecturers .lecturer-card__name {
+  font-size: 18px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+#page-lecturers .lecturer-card__email-link {
+  font-size: 14px;
+}
+#page-lecturers .lecturer-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#page-lecturers .lecturer-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+#page-lecturers .lecturer-card__topic-count {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+#page-lecturers .lecturer-card__profile-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  #page-lecturers .lecturers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #page-lecturers .lecturers-filter {
+    grid-template-columns: minmax(0, 1fr) 240px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #page-lecturers .lecturers-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+#page-lecturers .lecturers-filter__actions { display:flex; flex-wrap:wrap; gap:8px; }

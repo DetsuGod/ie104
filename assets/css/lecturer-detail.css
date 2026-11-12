@@ -1,0 +1,136 @@
+/* TV3 — hồ sơ với nội dung tùy chọn và component chủ đề dùng chung. */
+#page-lecturer-detail .profile-page {
+  position: relative;
+}
+#page-lecturer-detail .profile-page[aria-busy="true"] {
+  min-height: 100vh;
+}
+#page-lecturer-detail .profile-page[aria-busy="true"] > :not(.profile-page__loading) {
+  visibility: hidden;
+}
+#page-lecturer-detail .profile-page__loading {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  color: var(--color-muted);
+}
+#page-lecturer-detail .profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+#page-lecturer-detail .profile-header__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 24px;
+  font-weight: 600;
+  overflow: hidden;
+}
+#page-lecturer-detail .profile-header__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#page-lecturer-detail .profile-header__info {
+  min-width: 0;
+}
+#page-lecturer-detail .profile-header__affiliation {
+  color: var(--color-muted);
+  margin-top: 8px;
+  max-width: 70ch;
+}
+#page-lecturer-detail .profile-header__email {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 4px;
+}
+#page-lecturer-detail .profile-section {
+  margin-top: 32px;
+}
+#page-lecturer-detail .profile-section__title {
+  margin-bottom: 14px;
+}
+#page-lecturer-detail .profile-section__text {
+  max-width: 75ch;
+  color: var(--color-muted);
+}
+#page-lecturer-detail .profile-section__subtitle {
+  font-size: 16px;
+  margin-block: 20px 8px;
+}
+#page-lecturer-detail .profile-areas {
+  padding-left: 22px;
+  max-width: 75ch;
+  color: var(--color-muted);
+}
+#page-lecturer-detail .profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+#page-lecturer-detail .profile-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+#page-lecturer-detail .profile-source-note {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-top: 12px;
+  max-width: 80ch;
+}
+#page-lecturer-detail .profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+#page-lecturer-detail .metrics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+}
+#page-lecturer-detail .metric-card__value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+#page-lecturer-detail .metric-card__label {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+#page-lecturer-detail .related-topics-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+#page-lecturer-detail .related-topic-item + .related-topic-item {
+  border-top: 1px solid var(--color-border);
+}
+@media (max-width: 767px) {
+  #page-lecturer-detail .profile-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #page-lecturer-detail .profile-header__avatar {
+    width: 56px;
+    height: 56px;
+    flex-basis: 56px;
+    font-size: 18px;
+  }
+  #page-lecturer-detail .topic-row {
+    padding: 16px;
+  }
+}
