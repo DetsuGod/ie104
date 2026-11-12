@@ -12,6 +12,8 @@ PR #4 đã merge. Nhánh [integration/job-2](https://github.com/liem-2006/ie104/
 
 Website giúp sinh viên khám phá chủ đề nghiên cứu, xem cây kiến thức nền và tìm giảng viên hướng dẫn. Phiên bản tích hợp dùng HTML5, CSS3, JavaScript thuần và JSON cục bộ; không có backend hoặc bước build.
 
+Clone fork cá nhân, lấy upstream/integration/job-2 làm nền cho nhánh task riêng, push về fork và chọn base integration/job-2 khi mở PR. Xem hướng dẫn từng bước cho repo mới/có sẵn trong [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Chạy website
 
 1. Mở root repo bằng VS Code và chạy Live Server (hoặc HTTP static server tương đương).

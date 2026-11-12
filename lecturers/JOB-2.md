@@ -1,5 +1,8 @@
 # Job 2 — TV2: kiểm tra chéo và nâng cấp danh bạ/hồ sơ
 
+> Git Job 2: clone fork cá nhân → fetch upstream → tạo nhánh task riêng từ upstream/integration/job-2 → push lên origin → PR về liem-2006/ie104:integration/job-2. Xem [hướng dẫn clone mới hoặc dùng repo có sẵn](../CONTRIBUTING.md). Không viết trực tiếp trên nhánh chung.
+
+
 > Người thực hiện: TV2. Phần gốc: TV3. Một task và một PR bao gồm cả hai trang, không có hạn bàn giao cố định. PR #4 đã merge vào main. Nhánh làm nền và nhận PR Job 2 là integration/job-2.
 
 ## Mục tiêu, đầu vào và phạm vi
